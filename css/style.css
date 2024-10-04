@@ -1,0 +1,770 @@
+:root {
+    --transtion: .4s;
+    --section-color: #f7f7f7;
+    --main-color: #1c1c1c;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-title h2 {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.main-title h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -10px;
+    background-image: url(../imgs/dots.png);
+    z-index: -1;
+    left: 0;
+}
+
+/*navbar*/
+.navbar {
+    padding: 20px 0 30px;
+
+}
+
+.navbar.sticky {
+    position: fixed !important;
+    width: 100% !important;
+    top: 0 !important;
+    left: 0;
+    z-index: 888;
+    height: 62px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: white !important;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar.sticky .bars{
+    color: black !important;
+}
+
+.navbar.sticky ul {
+    align-items: center;
+}
+
+.navbar.sticky a {
+    color: black !important;
+}
+
+
+.navbar.sticky a.logo {
+    padding: 0 !important;
+}
+
+.navbar.sticky .nav-link.active {
+    border-bottom: 2px solid black !important;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-item {
+    font-size: 14px;
+    margin: 25px 20px 0;
+    padding: 5 10px;
+    cursor: pointer;
+
+}
+
+.navbar .nav-link {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 0 !important;
+}
+
+.navbar .nav-link.active {
+    border-bottom: 2px solid white;
+}
+
+/*end navbar*/
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 70% 70%;
+
+}
+
+.header .container>p {
+    font-size: 50px;
+}
+
+.header .social .icon i {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: white;
+}
+
+.header h1 {
+    font-size: 44px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.header h1.typing::after {
+    content: "";
+    animation: typing 12s linear infinite;
+    font-weight: 400;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "D|";
+    }
+
+    2% {
+        content: "De|";
+    }
+
+    3% {
+        content: "Dev|";
+    }
+
+    4% {
+        content: "Deve|";
+    }
+
+    5% {
+        content: "Devep|";
+    }
+
+    6% {
+        content: "Devepe|";
+    }
+
+    7% {
+        content: "Devepel|";
+    }
+
+    8% {
+        content: "Devepeler|";
+    }
+
+    9%,
+    10%,
+    11%,
+    12%,
+    13%,
+    14%,
+    15%,
+    16% {
+        content: "Devepeler|";
+    }
+
+    17% {
+        content: "Devepele|";
+    }
+
+    18% {
+        content: "Devepe|";
+    }
+
+    19% {
+        content: "Devep|";
+    }
+
+    20% {
+        content: "Deve|";
+    }
+
+    21% {
+        content: "Dev|";
+    }
+
+    22% {
+        content: "De|";
+    }
+
+    23% {
+        content: "D|";
+    }
+
+    24% {
+        content: "|";
+    }
+
+    25% {
+        content: "D|";
+    }
+
+    26% {
+        content: "De|";
+    }
+
+    27% {
+        content: "Des|";
+    }
+
+    28% {
+        content: "Desi|";
+    }
+
+    29% {
+        content: "Desig|";
+    }
+
+    30% {
+        content: "Desig|";
+    }
+
+    31% {
+        content: "Design|";
+    }
+
+    32% {
+        content: "Designe|";
+    }
+
+    33% {
+        content: "Designer|";
+    }
+
+    34%,
+    35%,
+    36%,
+    37%,
+    38%,
+    39%,
+    40%,
+    41%,
+    42%,
+    43%,
+    44%,
+    45%,
+    46%,
+    47%,
+    48%,
+    49%,
+    50%,
+    51% {
+        content: "Designer|";
+    }
+
+    52% {
+        content: "Designe|";
+    }
+
+    53% {
+        content: "Desig|";
+    }
+
+    54% {
+        content: "Desi|";
+    }
+
+    55% {
+        content: "Des|";
+    }
+
+    56% {
+        content: "De|";
+    }
+
+    57% {
+        content: "D|";
+    }
+
+    58% {
+        content: "|";
+    }
+
+    59% {
+        content: "M|";
+    }
+
+    60% {
+        content: "Mo|";
+    }
+
+    61% {
+        content: "Moh|";
+    }
+
+    62% {
+        content: "Moha|";
+    }
+
+    63% {
+        content: "Moham|";
+    }
+
+    64% {
+        content: "Mohamm|";
+    }
+
+    65% {
+        content: "Mohamme|";
+    }
+
+    66%,
+    90% {
+        content: "Mohammed|";
+    }
+
+    91% {
+        content: "Mohammed|";
+    }
+
+    92% {
+        content: "Mohamme|";
+    }
+
+    93% {
+        content: "Mohamm|";
+    }
+
+    94% {
+        content: "Moham|";
+    }
+
+    94% {
+        content: "Moha|";
+    }
+
+    95% {
+        content: "Moh|";
+    }
+
+    96% {
+        content: "Mo|";
+    }
+
+    97% {
+        content: "M|";
+    }
+
+    98% {
+        content: "|";
+    }
+
+    100% {
+        content: "";
+    }
+
+}
+
+/*end header*/
+/*about*/
+.about .row .image {
+    position: relative;
+    z-index: 5;
+}
+
+.about .row .image::before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 22%;
+    z-index: -1;
+    left: -10px;
+}
+
+.about .row .about-text .web {
+    background-color: var(--section-color);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 25px;
+    padding: 3px;
+    box-shadow: 0px 4px 8px  #e7d8d8a3 inset;
+    position: relative;
+
+}
+
+.about .row .about-text .web span:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.about .row .about-text .web span:last-child::before {
+    content: attr(data-name);
+    color: white;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.about .row .about-text .web span:last-child::after {
+    content: attr(data-value);
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.about .about-btns .btn {
+    padding: 10px 30px;
+    transition: var(--transtion);
+}
+
+.about .about-btns .btn a {
+    font-size: 13px;
+}
+
+.about .about-btns .btn:first-child {
+    background-color: var(--main-color);
+
+}
+
+.about .about-btns .btn:first-child:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+.about .about-btns .btn:first-child:hover a {
+    color: var(--main-color) !important;
+}
+
+.about .about-btns .btn:last-child {
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+.about .about-btns .btn:last-child:hover {
+    background-color: var(--main-color);
+
+}
+
+.about .about-btns .btn:last-child:hover a {
+    color: white !important;
+}
+
+.about .container .row .col-lg-7 .about-text p:nth-of-type(1) {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.about .container .row .col-lg-7 .about-text p:nth-of-type(2){
+    font-size: 15px;
+}
+
+/*end about*/
+
+/*services*/
+.services {
+    background-color: var(--section-color);
+    padding: 100px 0 70px
+}
+
+.services .row .box:hover .icon {
+    background-color: var(--main-color);
+}
+
+.services .row .box:hover .icon i {
+    color: white;
+}
+
+.services .row .box .icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: var(--section-color);
+    transition: var(--transtion) linear;
+}
+
+.services .row .box .icon i {
+    transition: var(--transtion) linear;
+}
+
+/*services*/
+
+/*Portfolio*/
+.portfolio {
+    padding: 100px 0 70px
+}
+
+.portfolio .row .inner:hover .layer {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.portfolio .row .inner:hover .icons {
+    transform: translateY(0px);
+}
+
+.portfolio .row .inner:hover h6 {
+    transform: translateY(0px);
+}
+
+.portfolio .row .layer {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+    transition: all var(--transtion);
+
+}
+
+.portfolio .row .layer .icons i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: all var(--transtion);
+
+}
+
+.portfolio .row .layer .icons {
+    transform: translateY(25px);
+    transition: all var(--transtion);
+}
+
+.portfolio .row .layer .icons i:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.portfolio .row .layer h6 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transform: translateY(-25px);
+    transition: all var(--transtion);
+}
+
+.portfolio ul .active {
+    background-color: transparent !important;
+    border-radius: 0;
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+/*Portfolio*/
+/*testimonials*/
+.testimonials {
+    background-color: var(--section-color);
+    padding: 100px 0 70px;
+
+}
+
+.testimonials .carousel-indicators button {
+    background-color: #d6d6d6 !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.testimonials .carousel-indicators button.active {
+    background-color: #869791 !important;
+}
+
+/*testimonials*/
+.works {
+    padding: 100px 0 70px;
+}
+
+.works .row .inner i {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.works .row .inner h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.works .row .inner p {
+    font-weight: 600;
+}
+
+/*Our Team.*/
+.team {
+    padding: 100px 0 70px;
+    background-color: var(--section-color);
+}
+
+.team .row .inner {
+    overflow: hidden;
+}
+
+.team .row .inner:hover .team-layer {
+    transform: rotateY(0deg) scale(1, 1);
+    opacity: 1;
+}
+
+.team .row .image {
+    overflow: hidden;
+}
+
+.team .row .image:hover img {
+    transform: scale(1.2);
+}
+
+.team .row .image img {
+    transition: all var(--transtion);
+}
+
+.team .row .team-info {
+    background-color: rgba(52, 52, 52, .8);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.team-layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: rgba(255, 255, 255, 0.958);
+    display: flex;
+    justify-content: center;
+
+    transition: all var(--transtion);
+    opacity: 0;
+}
+
+.team-layer .icons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-layer i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.team-layer i:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+/*contact-us*/
+.contact {
+    padding: 100px 0 70px;
+}
+
+.contact .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--section-color);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all var(--transtion);
+}
+
+.contact .icon:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact .icon i {
+    font-size: 24px;
+}
+
+.contact form input,
+textarea {
+    border: none;
+    outline: none;
+    background-color: var(--section-color);
+    border-radius: 6px;
+}
+
+.contact textarea {
+    height: 160px;
+    max-height: 160px;
+    width: 100%;
+    resize: both;
+}
+
+.contact .contact-btn {
+    background-color: var(--main-color);
+    padding: 10px 40px;
+    color: white;
+    font-size: 14px;
+}
+
+.contact .contact-btn:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+/*footer*/
+footer {
+    background-color: var(--main-color);
+}
+
+footer p {
+    font-size: 13px;
+}
